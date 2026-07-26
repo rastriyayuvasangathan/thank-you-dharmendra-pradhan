@@ -1,0 +1,91 @@
+<h1>Email Campaign</h1>
+
+<p>
+Choose your preferred language. Your email application will open with the subject and letter already filled in.
+</p>
+
+<button onclick="sendEnglish()">📧 Send in English</button>
+
+<button onclick="sendHindi()" style="background:#138808;margin-left:15px;">
+📧 हिंदी में भेजें
+</button>
+
+<script>
+
+function sendEnglish(){
+
+const subject="Gratitude for Your Service to India's Education System";
+
+const body=`
+Respected Shri Dharmendra Pradhan Ji,
+
+We, the undersigned citizens of India, extend our heartfelt gratitude for your dedicated service as the Union Education Minister of India.
+
+During your tenure, you introduced several landmark reforms that have significantly contributed to strengthening India's education system. We sincerely appreciate your efforts towards:
+
+- Effective implementation of the National Education Policy (NEP) 2020.
+- Promoting multidisciplinary, flexible and skill-oriented education.
+- Expanding digital learning through platforms such as DIKSHA and SWAYAM.
+- Encouraging research, innovation and academic excellence.
+- Promoting Indian languages and mother-tongue education.
+- Supporting curriculum reforms that placed greater emphasis on India's civilizational heritage, freedom fighters, and many historical personalities who had previously received comparatively less attention.
+- Working towards making education more inclusive, accessible and future-oriented.
+
+We also appreciate your efforts to ensure that India's students develop a deeper understanding of our rich civilizational heritage by giving greater prominence to Indian heroes, thinkers, saints, freedom fighters and nation builders in school education.
+
+At the same time, we would like to acknowledge that we were deeply disheartened when the UGC Bill was introduced by BJP Government, as many among us had genuine concerns regarding certain of its provisions and their possible implications. Nevertheless, we firmly believe that differences on individual policies should not overshadow the broader and lasting contributions you have made to India's education sector. We therefore express our sincere gratitude for your overall service and commitment to strengthening education in our country.
+
+We have read your resignation with great respect. Your decision to step down, while stating that you did not wish anti-national elements to exploit the situation surrounding the student protests for their own agenda, demonstrates your willingness to place the interests of the nation and students above personal office. Such an act reflects responsibility, integrity and commitment to national unity.
+
+We believe that educational institutions should remain centres of learning, innovation, constructive debate and nation-building, and should never become platforms for violence, unrest or the misuse of genuine student concerns.
+
+Thank you once again for your invaluable contribution to India's education system and for your service to the nation.
+
+We wish you good health, strength and continued success in serving Bharat.
+
+With profound respect,
+
+Concerned Citizens of India
+`;
+
+window.location.href =
+`mailto:d.pradhan@sansad.nic.in?cc=minister.sm@gov.in,president@bjp.org&subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+}
+
+function sendHindi(){
+
+const subject="भारत की शिक्षा व्यवस्था में आपके योगदान हेतु हार्दिक आभार";
+
+const body=`आदरणीय श्री धर्मेंद्र प्रधान जी,
+
+हम, भारत के हस्ताक्षरित नागरिक, भारत के केंद्रीय शिक्षा मंत्री के रूप में आपके समर्पित एवं उल्लेखनीय कार्यकाल के लिए अपना हार्दिक आभार व्यक्त करते हैं।
+आपके कार्यकाल में शिक्षा क्षेत्र में अनेक महत्वपूर्ण सुधार किए गए, जिन्होंने भारत की शिक्षा व्यवस्था को सुदृढ़ बनाने में महत्वपूर्ण योगदान दिया। विशेष रूप से हम आपके निम्नलिखित प्रयासों की सराहना करते हैं—
+
+- राष्ट्रीय शिक्षा नीति (NEP) 2020 के प्रभावी क्रियान्वयन हेतु आपके प्रयास।
+- बहुविषयक, लचीली एवं कौशल-आधारित शिक्षा को बढ़ावा देना।
+- DIKSHA एवं SWAYAM जैसे डिजिटल शिक्षण मंचों का विस्तार।
+- अनुसंधान, नवाचार एवं शैक्षणिक उत्कृष्टता को प्रोत्साहन।
+- भारतीय भाषाओं एवं मातृभाषा में शिक्षा को बढ़ावा देना।
+- पाठ्यक्रम सुधारों के माध्यम से भारत की सभ्यतागत विरासत, स्वतंत्रता सेनानियों तथा उन अनेक ऐतिहासिक व्यक्तित्वों को उचित स्थान दिलाने का प्रयास, जिन्हें पहले अपेक्षाकृत कम महत्व मिला था।
+- शिक्षा को अधिक समावेशी, सुलभ एवं भविष्य उन्मुख बनाने की दिशा में कार्य।
+
+हम विशेष रूप से इस बात की भी सराहना करते हैं कि आपने विद्यालयी शिक्षा में भारत के महान नायकों, चिंतकों, संतों, स्वतंत्रता सेनानियों एवं राष्ट्रनिर्माताओं को अधिक प्रमुखता देकर विद्यार्थियों को भारत की समृद्ध सभ्यतागत विरासत से परिचित कराने का महत्वपूर्ण प्रयास किया।
+
+साथ ही, हम यह भी स्वीकार करना चाहते हैं कि जब यूजीसी विधेयक (UGC Bill) प्रस्तुत किया गया था, तब हममें से अनेक लोग उससे अत्यंत निराश और चिंतित थे। उस विधेयक के कुछ प्रावधानों को लेकर हमारी वास्तविक एवं गंभीर चिंताएँ थीं। फिर भी हमारा मानना है कि किसी एक नीति पर मतभेद आपके शिक्षा क्षेत्र में किए गए व्यापक एवं दीर्घकालिक योगदान को कम नहीं कर सकते। इसलिए हम आपके समग्र योगदान एवं शिक्षा सुधारों के प्रति आपकी प्रतिबद्धता के लिए हृदय से आपका धन्यवाद करते हैं।
+
+हमने आपका इस्तीफा सम्मानपूर्वक पढ़ा। अपने त्यागपत्र में आपने कहा कि आप नहीं चाहते थे कि छात्र आंदोलनों की स्थिति का दुरुपयोग राष्ट्र-विरोधी तत्व अपने स्वार्थ के लिए करें। इस कारण पद छोड़ने का आपका निर्णय यह दर्शाता है कि आपने व्यक्तिगत पद से ऊपर राष्ट्रहित एवं विद्यार्थियों के हित को प्राथमिकता दी। यह उत्तरदायित्व, ईमानदारी एवं राष्ट्रीय एकता के प्रति आपकी प्रतिबद्धता का परिचायक है।
+हमारा विश्वास है कि शैक्षणिक संस्थान शिक्षा, नवाचार, रचनात्मक संवाद एवं राष्ट्र निर्माण के केंद्र बने रहें और उन्हें कभी भी हिंसा, अशांति अथवा विद्यार्थियों की वास्तविक चिंताओं के राजनीतिक या अन्य दुरुपयोग का माध्यम नहीं बनना चाहिए।
+
+भारत की शिक्षा व्यवस्था तथा राष्ट्र की सेवा में आपके अमूल्य योगदान के लिए हम एक बार पुनः आपका हार्दिक आभार व्यक्त करते हैं।
+हम आपके उत्तम स्वास्थ्य, दीर्घायु एवं राष्ट्रसेवा के आगामी सभी प्रयासों के लिए हार्दिक शुभकामनाएँ देते हैं।
+
+सादर,
+भारत के चिंतित एवं कृतज्ञ नागरिक
+`;
+
+window.location.href =
+`mailto:d.pradhan@sansad.nic.in?cc=minister.sm@gov.in,president@bjp.org&subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+}
+
+</script>
